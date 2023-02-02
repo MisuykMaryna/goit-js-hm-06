@@ -22,3 +22,10 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+.gallery__list {
+  display: inline-block;
+}
+
+.gallery__list:not(:last-child) {
+  margin-right: 15px;
+}
