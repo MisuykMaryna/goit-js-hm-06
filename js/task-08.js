@@ -7,11 +7,12 @@ function loginPasswordForm(event) {
     const password = event.currentTarget.elements.password.value;
 
     const formData = { email, password };
-    email === "" || password === "" ? alert("Fill out the form") : console.log(formData);
+    email === "" || password === "" ? alert("Fill out the form") : console.log(formData),
+        event.currentTarget.reset();
    
-    event.currentTarget.reset();
+   
 
 }
 
-
 form.addEventListener("submit", loginPasswordForm);
+
